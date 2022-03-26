@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11957,7 +11958,127 @@ fieldset:disabled .btn {
   }
 }
 
-.container {
+body {
+  margin: 0px;
+  padding: 0px;
   background-color: #F5F6FF;
+  font-family: 'Mulish', sans-serif;
+}
+
+.container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__main--background {
+  position: relative;
+  border-radius: 24px;
+  background-color: #4571F5;
+  height: 899px;
+  max-width: 483px;
+  width: 100%;
+}
+
+.product__main {
+  border-radius: 24px;
+  background-color: #FFFFFF;
+  height: 899px;
+  position: absolute;
+  padding: 36px;
+  max-width: 483px;
+  top: 50px;
+  left: 50px;
+  width: 100%;
+}
+
+.product__detail--title h6, .product__detail--title .h6 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.product__detail--icons i {
+  font-size: 15px;
+  color: #F8AB18;
+}
+
+.product__detail--textColor {
+  font-size: 15px;
+  color: #747988;
+}
+
+.product__detail--price h5, .product__detail--price .h5 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product__detail--tabs {
+  border: solid none;
+  border-radius: 10px;
+  background-color: #F5F6FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 8px;
+}
+
+.product__detail--tabs span {
+  border: solid none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 44, 168, 0.06);
+          box-shadow: 0px 5px 5px rgba(0, 44, 168, 0.06);
+  background-color: #FFFFFF;
+  font-size: 13px;
+  height: 30px;
+  padding: 5px 22px 5px 22px;
+  text-align: center;
+  width: 155px;
+}
+
+.product__detail--search {
+  border: solid 1px #D7D9E8;
+  border-radius: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 10px;
+}
+
+.product__detail--search span {
+  color: #747988;
+  font-size: 25px;
+}
+
+.product__detail--content {
+  border: solid 1px #D7D9E8;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  padding: 10px;
+}
+
+.product__detail--content h3, .product__detail--content .h3 {
+  font-size: 14px;
+}
+
+.product__detail--content h4, .product__detail--content .h4 {
+  font-size: 12px;
+}
+
+.product__detail--content h5, .product__detail--content .h5 {
+  font-size: 10px;
+}
+
+.product__detail--content button {
+  border-radius: 12px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background-color: #4571F5;
 }
 /*# sourceMappingURL=main.css.map */

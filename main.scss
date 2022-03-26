@@ -1,5 +1,125 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 
-.container {
-background-color:  #F5F6FF;  
+$bodyBackground:#F5F6FF;
+$starColor: #F8AB18;
+$cardBackground: #FFFFFF;;
+$borderStyle: #D7D9E8;
+$searchIconColor: #747988;
+$btnPickUpColor: #4571F5;
+$borderColor: #D7D9E8;
+$fontSize1: 14px;
+$fontSize2: 12px;
+$fontSize3: 10px;
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: $bodyBackground;
+    font-family: 'Mulish', sans-serif;
 }
+
+.container{
+    justify-content: center;
+    display: flex;
+}
+.product__main--background{
+    position: relative;
+    border-radius: 24px;
+    background-color: $btnPickUpColor;
+    height: 899px;
+    max-width: 483px;
+    width: 100%;
+}
+
+.product__main {
+    border-radius: 24px;
+    background-color: $cardBackground;
+    height: 899px;
+    position: absolute;
+    padding: 36px;
+    max-width: 483px;
+    top: 50px;
+    left: 50px;
+    width: 100%;
+}
+
+.product__detail--title h6{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product__detail--icons i{
+    font-size: 15px;
+    color: $starColor;
+    
+}
+
+.product__detail--textColor{
+    font-size: 15px;
+    color: #747988;
+}
+
+.product__detail--price h5 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product__detail--tabs{
+    border: solid none;
+    border-radius: 10px;
+    background-color: $bodyBackground;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding: 8px;
+    span{
+        border: solid none;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px rgba(0, 44, 168, 0.06);
+        background-color: $cardBackground;
+        font-size: 13px;
+        height: 30px;
+        padding: 5px 22px 5px 22px;
+        text-align: center;
+        width: 155px;
+    }
+}
+
+.product__detail--search{
+    border: solid 1px $borderStyle;
+    border-radius: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 10px;
+    span {
+        color: $searchIconColor;
+        font-size: 25px;
+    }
+}
+
+.product__detail--content {
+    border: solid 1px $borderStyle;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    padding: 10px;
+    h3{
+        font-size: $fontSize1;
+    }
+    h4{
+        font-size: $fontSize2;
+    }
+    h5{
+        font-size: $fontSize3;
+    }
+    button {
+        border-radius: 12px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        background-color: $btnPickUpColor;
+    }
+}
+
+
