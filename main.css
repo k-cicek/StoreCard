@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11988,7 +11988,7 @@ body {
   background-color: #FFFFFF;
   height: 899px;
   position: absolute;
-  padding: 36px;
+  padding: 56px;
   max-width: 483px;
   top: 50px;
   left: 50px;
@@ -11996,28 +11996,36 @@ body {
 }
 
 .product__detail--title h6, .product__detail--title .h6 {
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
 .product__detail--icons i {
-  font-size: 15px;
+  font-size: 20px;
   color: #F8AB18;
 }
 
+.product__detail--evaluation {
+  font-size: 16px;
+  font-weight: 900;
+}
+
 .product__detail--textColor {
-  font-size: 15px;
+  font-size: 16px;
   color: #747988;
+  font-weight: 600;
 }
 
 .product__detail--price h5, .product__detail--price .h5 {
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .product__detail--tabs {
-  border: solid none;
+  border: none;
   border-radius: 10px;
   background-color: #F5F6FF;
   display: -webkit-box;
@@ -12028,57 +12036,128 @@ body {
           justify-content: space-between;
   margin-bottom: 24px;
   padding: 8px;
+  text-align: center;
 }
 
-.product__detail--tabs span {
-  border: solid none;
+.product__detail--tabs button {
+  border: none;
   border-radius: 10px;
+  background-color: #F5F6FF;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  padding: 5px 22px 5px 22px;
+  width: 185px;
+}
+
+.product__detail--tabs button.active {
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 5px 5px rgba(0, 44, 168, 0.06);
           box-shadow: 0px 5px 5px rgba(0, 44, 168, 0.06);
-  background-color: #FFFFFF;
-  font-size: 13px;
-  height: 30px;
-  padding: 5px 22px 5px 22px;
-  text-align: center;
-  width: 155px;
 }
 
 .product__detail--search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border: solid 1px #D7D9E8;
   border-radius: 16px;
   margin-top: 24px;
   margin-bottom: 24px;
+  height: 52px;
+  width: 371px;
   padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .product__detail--search span {
   color: #747988;
-  font-size: 25px;
+  height: 32px;
+  width: 32px;
+  margin-top: 15px;
+}
+
+.product__detail--content--add-cart {
+  border: solid 1px #D7D9E8;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  padding: 16px;
+  height: 193px;
+  width: 369px;
+}
+
+.product__detail--content--add-cart h3, .product__detail--content--add-cart .h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product__detail--content--add-cart h4, .product__detail--content--add-cart .h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.product__detail--content--add-cart h5, .product__detail--content--add-cart .h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #747988;
+}
+
+.product__detail--content--add-cart button {
+  border-radius: 12px;
+  background-color: #4571F5;
+  font-size: 18px;
+  font-weight: 600;
+  height: 55px;
+  width: 337px;
+  margin-top: 10px;
+}
+
+.product__detail--tabsContent {
+  display: none;
+}
+
+.product__detail--tabsContent.active {
+  display: block;
 }
 
 .product__detail--content {
   border: solid 1px #D7D9E8;
   border-radius: 16px;
   margin-bottom: 8px;
-  padding: 10px;
+  padding: 16px;
+  height: 109px;
+  width: 369px;
 }
 
 .product__detail--content h3, .product__detail--content .h3 {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .product__detail--content h4, .product__detail--content .h4 {
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .product__detail--content h5, .product__detail--content .h5 {
-  font-size: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #747988;
 }
 
-.product__detail--content button {
-  border-radius: 12px;
+.product__detail--content-title {
+  color: #747988;
   font-size: 14px;
-  margin-bottom: 10px;
-  background-color: #4571F5;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 /*# sourceMappingURL=main.css.map */

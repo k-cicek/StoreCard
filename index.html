@@ -25,41 +25,51 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <span>5.0</span>
+                    <span class="product__detail--evaluation">5.0</span>
                     <a class="product__detail--textColor" href="/">14 rewievs</a>
                 </div>
                 <div class="product__detail--price">
                     <h5>4395,-</h5>
                 </div>
                 <div class="product__detail--tabs">
-                    <span>Deliver the item</span>
-                    <span>Pick up in store</span>
+                    <button class="btn" data-target-tab="#area">Deliver the item</button>
+                    <button class="btn active" data-target-tab="#addCart">Pick up in store</button>
                 </div>
 
                 <div class="product__detail--search">
                     <span class="fa fa-search fa-lg search-form-icon"></span>
+                    Please enter product
                 </div>
-                <div class="product__detail--content">
-                    <h3>Fyllingsdalen</h3>
-                    <h4>Pick up in 5 days</h4>
-                    <h5>Closed, opens tomorrow at 10:00</h5>
-                    <button type="button" class="btn btn-primary btn-block">Add to cart</button>
+                <div class="product__detail--tabsContent" id="area">
+                    <div class="product__detail--content">
+                        <h3>Fana</h3>
+                        <h4>Pick up in 3 days</h4>
+                        <h5>Closed, opens tomorrow at 10:00</h5>
+                    </div>
                 </div>
-                <div class="product__detail--content-title"> GET THE ITEMS FASTER
-                </div>
-                <div class="product__detail--content">
-                    <h3>Fana</h3>
-                    <h4>Pick up in 3 days</h4>
-                    <h5>Closed, opens tomorrow at 10:00</h5>
-                </div>
-                <div class="product__detail--content">
-                    <h3>Lagoon</h3>
-                    <h4>Pick up in 4 days</h4>
-                    <h5>Closed, opens tomorrow at 10:00</h5>
+                <div class="product__detail--tabsContent active" id="addCart">
+                    <div class="product__detail--content-title"> GET THE ITEMS FASTER </div>
+                    <div class="product__detail--content--add-cart">
+                        <h3>Fyllingsdalen</h3>
+                        <h4>Pick up in 5 days</h4>
+                        <h5>Closed, opens tomorrow at 10:00</h5>
+                        <button type="button" class="btn btn-primary btn-block">Add to cart</button>
+                    </div>
+                    <div class="product__detail--content">
+                        <h3>Fana</h3>
+                        <h4>Pick up in 3 days</h4>
+                        <h5>Closed, opens tomorrow at 10:00</h5>
+                    </div>
+                    <div class="product__detail--content">
+                        <h3>Lagoon</h3>
+                        <h4>Pick up in 4 days</h4>
+                        <h5>Closed, opens tomorrow at 10:00</h5>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>
