@@ -60,7 +60,11 @@ body{
     font-size: 16px;
     font-weight: 900;
 }
-
+.product__detail--circle {
+    font-weight: 900;
+    font-size: large;
+    margin-right: -7px;
+}
 
 .product__detail--textColor{
     font-size: 16px;
@@ -109,7 +113,6 @@ body{
     margin-top: 24px;
     margin-bottom: 24px;
     height: 52px;
-    width: 371px;
     padding: 10px;
     font-size: 16px;
     font-weight: 600;
@@ -128,10 +131,14 @@ body{
     margin-bottom: 8px;
     padding: 16px;
     height: 193px;
-    width: 369px;
-    h3{
+    p{
         font-size: $fontSize1;
         font-weight: 700;
+        margin-bottom: 8px;
+    }
+    span{
+        font-size: $fontSize1;
+        font-weight: 400;
     }
     h4{
         font-size: $fontSize2;
@@ -148,17 +155,16 @@ body{
         font-size: 18px;
         font-weight: 600;
         height: 55px;
-        width: 337px;
         margin-top: 10px;
     }
 }
 .product__detail--tabsContent{
         display: none;
-    }
+}
 
 .product__detail--tabsContent.active{
         display: block;
-    }   
+}   
 
 .product__detail--content {
     border: solid 1px $borderStyle;
@@ -166,10 +172,14 @@ body{
     margin-bottom: 8px;
     padding: 16px;
     height: 109px;
-    width: 369px;
-    h3{
+    p{
         font-size: $fontSize1;
         font-weight: 700;
+        margin-bottom: 8px;
+    }
+    span{
+        font-size: $fontSize1;
+        font-weight: 400;
     }
     h4{
         font-size: $fontSize2;
@@ -188,4 +198,62 @@ body{
     font-weight: 700;
     margin-top: 24px;
     margin-bottom: 16px;
+}
+@media only screen and (max-width : 475px) {
+    .product__main {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width : 425px) {
+    .product__main {
+        padding: 10px;
+        padding-top: 30px;
+        left: 10px;
+    }
+    .product__detail--content {
+        margin-bottom: 25px;
+    }
+    .product__detail--content-title{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width : 375px) {
+    .product__main {
+        padding: 10px;
+        padding-top: 30px;
+    }
+    .product__detail--title h6{
+        font-size: 20px;
+    }
+    .product__detail--tabs{
+        button{
+            font-size: 14px;
+        }
+    }
+    .product__detail--content {
+        margin-bottom: 30px;
+    }
+    .product__detail--content-title{
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width : 325px) {
+    .product__main {
+        padding: 10px;
+        padding-top: 30px;
+    }
+    .product__detail--tabs{
+        button{
+            font-size: 11px;
+        }
+    }
+    .product__detail--content {
+        margin-bottom: 30px;
+    }
+    .product__detail--content-title{
+        margin-top: 35px;
+    }
 }

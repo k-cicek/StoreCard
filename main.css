@@ -12011,6 +12011,12 @@ body {
   font-weight: 900;
 }
 
+.product__detail--circle {
+  font-weight: 900;
+  font-size: large;
+  margin-right: -7px;
+}
+
 .product__detail--textColor {
   font-size: 16px;
   color: #747988;
@@ -12069,7 +12075,6 @@ body {
   margin-top: 24px;
   margin-bottom: 24px;
   height: 52px;
-  width: 371px;
   padding: 10px;
   font-size: 16px;
   font-weight: 600;
@@ -12091,12 +12096,17 @@ body {
   margin-bottom: 8px;
   padding: 16px;
   height: 193px;
-  width: 369px;
 }
 
-.product__detail--content--add-cart h3, .product__detail--content--add-cart .h3 {
+.product__detail--content--add-cart p {
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.product__detail--content--add-cart span {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .product__detail--content--add-cart h4, .product__detail--content--add-cart .h4 {
@@ -12116,7 +12126,6 @@ body {
   font-size: 18px;
   font-weight: 600;
   height: 55px;
-  width: 337px;
   margin-top: 10px;
 }
 
@@ -12134,12 +12143,17 @@ body {
   margin-bottom: 8px;
   padding: 16px;
   height: 109px;
-  width: 369px;
 }
 
-.product__detail--content h3, .product__detail--content .h3 {
+.product__detail--content p {
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.product__detail--content span {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .product__detail--content h4, .product__detail--content .h4 {
@@ -12159,5 +12173,60 @@ body {
   font-weight: 700;
   margin-top: 24px;
   margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 475px) {
+  .product__main {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .product__main {
+    padding: 10px;
+    padding-top: 30px;
+    left: 10px;
+  }
+  .product__detail--content {
+    margin-bottom: 25px;
+  }
+  .product__detail--content-title {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .product__main {
+    padding: 10px;
+    padding-top: 30px;
+  }
+  .product__detail--title h6, .product__detail--title .h6 {
+    font-size: 20px;
+  }
+  .product__detail--tabs button {
+    font-size: 14px;
+  }
+  .product__detail--content {
+    margin-bottom: 30px;
+  }
+  .product__detail--content-title {
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .product__main {
+    padding: 10px;
+    padding-top: 30px;
+  }
+  .product__detail--tabs button {
+    font-size: 11px;
+  }
+  .product__detail--content {
+    margin-bottom: 30px;
+  }
+  .product__detail--content-title {
+    margin-top: 35px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
